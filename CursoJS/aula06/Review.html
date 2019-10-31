@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Review</title>
+    <link href="https://fonts.googleapis.com/css?family=Asap+Condensed&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: rgb(238, 208, 168);
+            font-family: 'Asap Condensed', sans-serif;
+            font-size: 25pt;
+        }
+    </style>
+</head>
+<body>
+    <h1>Review - Conversion, Template String and Math Operations</h1>
+    <script>
+        var name = window.prompt('What is your name?')
+        var age = window.prompt('How old are you?')
+        document.write(`The awesome ${name} is only ${age} years old! So young.</br></br></br>`)
+
+        //Math operations - addition
+        var n1 = Number(window.prompt('Type a number to sum'))
+        var n2 = Number(window.prompt('Type another number'))
+        s = n1 + n2
+        document.write(`==> The sum of ${n1} and ${n2} is ${s}</br>`)
+
+
+        //Math operations - subtraction
+        var n3 = Number(window.prompt('Type a number to subtract'))
+        var n4 = Number(window.prompt('Type another number'))
+        m = n3 - n4
+        document.write(`==> ${n3} minus ${n4} is ${m}</br>`)
+
+        //Math operations - multiplication
+        var n5 = Number(window.prompt('Type a number to multiply'))
+        var n6 = Number(window.prompt('Type another number'))
+        t = n5 * n6
+        document.write(`==> The multiplication of ${n5} and ${n6} is ${t}</br>`)
+
+        //Math operations - division
+        var n7 = Number(window.prompt('Type a number to divide'))
+        var n8 = Number(window.prompt('Type another number'))
+        d = n7 / n8
+        document.write(`==> The division of ${n7} and ${n8} is ${d}</br>`)
+    </script>
+</body>
+
+</html>
