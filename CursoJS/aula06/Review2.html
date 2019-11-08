@@ -18,6 +18,7 @@
 <body>
     <h1>Try again and again</h1>
     <script>
+        
         // review de 'template string'
         var name = window.prompt('Type your name')
         document.write(`The name ${name} has ${name.length} letters.`)
@@ -32,11 +33,19 @@
         // review - currency symbol
         var n1 = 1546.5
         n1.toFixed(2).replace(',','.')
-        n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
-        n1.toLocaleString('pt-BR', {style: 'currency', currency: 'USD'})
-        n1.toLocaleString('pt-BR', {style: 'currency', currency: 'EUR'})
+        n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})       
         
-        
+        // review - template string 2
+        var name = 'Gabriela'
+        var age = 7
+        var color = 'pink'
+        var subject = 'Art'
+
+        document.write(`${name} has ${name.length} letters. She is ${age} years old, likes ${color} color and her favourite subject at school is ${subject}.<br>`)
+        document.write(`The name ${name} written in uppercase is ${name.toUpperCase(name)}.<br>`)
+        document.write(`The name ${name} written in lower case is ${name.toLowerCase(name)}.<br>`)
+    
+    
     </script>
     
 </body>
