@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>First steps with DOM</title>
+    <style>
+        body {
+            background-color: rgb(18, 77, 100);
+            color: rgb(236, 233, 233);
+            font: normal 18pt Georgia;
+        }   
+    
+    </style>
+</head>
+<body>
+    <h1>Starting studies with DOM</h1>
+    <p>Here is the result</p>
+    <p>Learning how to use <strong>DOM</strong> in Javascript.</p>
+    <div class = 'msg'>Clique em mim</div>
+
+    <script>
+        //basic access
+    /*  window.document.write("Hello, World!")
+        window.document.write(window.document.charset)
+        window.document.write(window.navigator.appName)
+        window.document.write(window.document.URL)
+    */
+
+    // by tagName
+    var p1 = window.document.getElementsByTagName('p')[0]
+    // attention to names in plural
+    // in this part the sentence is written and the color is changed
+    window.document.write('It is written: ' + p1.innerText)
+    p1.style.color = 'blue'
+           
+   //in this part the background color is changed to black
+    var body = window.document.body
+    body.style.background = 'black'
+
+    var p2 = window.document.getElementsByTagName('p')[1]
+    document.write(p2.innerHTML)
+    /*
+    //by ID
+    var d = window.document.getElementById('msg')
+    //shortest
+    d.style.background = 'green'
+    d.innerText = 'I am waiting'
+    //the complete command
+    window.document.getElementById('msg').innerText = 'Olá'
+    
+
+    //by Name
+    var d = window.document.getElementsByName('msg')[0]
+    d.innerText = 'Hi'
+    
+
+
+    //by class
+    var a = window.document.getElementsByClassName('msg') [0]
+        a.innerText = 'Ahoy'
+    
+
+    // by query selector   //class. - id#
+    //more recent, old browsers might not have technical support
+    var d = window.document.querySelector('.msg')
+    d.style.background = 'blue'
+    */
+   
+    </script>
+</body>
+</html>
