@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Review - events on JS</title>
+
+    <style>
+        h1 {
+            font: normal 20pt Arial;
+            background:rgb(235, 129, 148);
+            width: 200px;
+            height: 200px;
+            line-height: 200px;           
+            text-align: center;
+        }
+    
+    
+    </style>
+
+</head>
+<body>
+    <h1 id="greet" onclick="clicar()" onmouseenter="entrar()" onmouseout="ficar()">Hello, world!</h1>
+
+
+    <script>
+        var a = window.document.getElementById('greet')
+
+        function clicar() {
+            a.innerText = 'Olá, mundo!'
+            a.style.background = 'blue'
+        }
+        function ficar() {
+            a.innerText = 'Ciao, mondo!'
+            a.style.background = 'yellow'
+        }
+        function entrar() {
+            a.innerText = 'Hola, mundo!'
+            a.style.background = 'red'
+        }
+
+
+
+        
+
+
+    
+    
+    </script>
+    
+</body>
+</html>
