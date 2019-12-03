@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Review_II</title>
+</head>
+<body>
+    <h1>Como fazer conta de adição</h1>
+    <input type="number" name="n1" id="n1"> +
+    <input type="number" name="n2" id="n2">
+    <input type="button" value="Somar" onclick="somar()">
+    <div id="res">Result: </div>
+
+
+
+    <script>
+
+    var a = document.getElementsByTagName('h1')[0]
+    a.style.background = 'Yellow'
+    a.style.width = '200px'
+    a.style.height = '200px'
+    a.style.textAlign = 'center'
+    a.style.lineHeight = '70px'
+    a.style.color = 'purple'
+    a.style.fontFamily = 'Georgia'
+
+    function somar() {
+        var number1 = document.getElementById('n1')
+        var number2 = document.getElementById('n2')
+        var res = document.getElementById('res')
+
+        var num1 = Number(number1.value)
+        var num2 = Number(number2.value)
+        var s = num1 + num2
+        res.innerHTML = `A soma de ${num1} + ${num2} é igual a <strong>${s}</strong>`
+        res.style.fontFamily = 'Georgia'
+        res.style.background = 'pink'
+        res.style.width = '400px'
+        res.style.height = '180px'
+        res.style.lineHeight = '100px'
+        res.style.textAlign = 'center'
+    }
+
+    var result = document.getElementById('res')
+    result.style.fontFamily = 'Arial'
+    result.style.color = 'purple'
+    result.style.fontSize = '30px'
+    </script>
+    
+</body>
+</html>
