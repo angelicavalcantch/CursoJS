@@ -17,7 +17,7 @@ Module E - Replications; while(); do {} while(); for();
 Module F - Understanding arrays; functions; 
 
 
-Course of JavaScript for beginners // Ongoing
+\ Course of JavaScript for beginners /
 
 https://www.youtube.com/playlist?list=PLHz_AreHm4dlsK3Nr9GVvXCbpQyHQl1o1
 
